@@ -45,5 +45,9 @@ const alphabet = {
 };
 
 module.exports = function decrypt(str) {
-    // Your code here
+    return str.split('   ').map(
+        x => x.split(' ').map(
+            y => alphabet[y]
+        ).join('')
+    ).join(' ')
 };
