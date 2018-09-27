@@ -44,6 +44,14 @@ const alphabet = {
        "." : "E"
 };
 
+
+
+
+
 module.exports = function decrypt(str) {
-    // Your code here
+    return str.split('   ').map(
+        word => word.split(' ').map(
+            letters => alphabet[letters]
+        ).join('')
+    ).join(' ')
 };
