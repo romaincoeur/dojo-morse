@@ -45,5 +45,10 @@ const alphabet = {
 };
 
 module.exports = function decrypt(str) {
-    // Your code here
+
+    let word = [];
+    word = str.split("   ").map(arg => arg.split(" ").map(arg2 => alphabet[arg2]).join(""));
+    return word.join(" ");
+
 };
+
