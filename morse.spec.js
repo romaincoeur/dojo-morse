@@ -18,7 +18,7 @@ describe('Morse Encryption', () => {
     })
 
     it('should return WILD CODE', () => {
-        assert.equal(Morse('.-- .. .-.. -..  -.-. --- -.. .'), 'WILD CODE');
+        assert.equal(Morse('.-- .. .-.. -..   -.-. --- -.. .'), 'WILD CODE');
     })
     
 })
